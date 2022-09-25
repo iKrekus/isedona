@@ -7,13 +7,21 @@
 </head>
 
 <body>
-    <header class="main-header">
-        <img src="#" alt="Логотип" class="logo">
+    <header header class="main-header">
+        <a class="navigation-logo" href="index/html">
+            <img src="#" alt="Логотип 'СЕДОНА'" class="logo-image">
+        </a>
         <nav class="navigation">
             <ul class="navigation-list">
-                <li class="navigation-item">Главная</li>
-                <li class="navigation-item">О седоне</li>
-                <li class="navigation-item">Гостиницы </li>
+                <li class="navigation-item">
+                    <a href="index.html" class="navigation-link navigation-link-current">Главная</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#" class="navigation-link">О седоне</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="catalog.html" class="navigation-link">Гостиницы</a>
+                </li>
             </ul>
             <ul class="navigation-list navigation-user">
                 <li class="navigation-item">
@@ -93,27 +101,28 @@
                 <p class="call-to-action-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
                 <a href="#" class="call-to-action-link">ПОИСК ГОСТИНИЦЫ В седоне</a>
         </section>
-        <form class="subsribe" action="https://echo.htmlacademy.ru/" method="post">
-            <h2 class="subsribe-title"></h2>
-            <p class="subsribe-description"></p>
-            <div class="subsribe-line">
-                <!--Див для длаьнейшего выравнивания в строку инпута и сабмита-->
-                <input type="email" class="subscribe-email" name="subscriber-email" id="subscribe-email" placeholder="Ваш-email" required>
-                <button class="button subsribe-button">ПОДПИСАТЬСЯ</button>
-            </div>
-        </form>
+
     </main>
+    <form class="subsribe subsribe-main" action="https://echo.htmlacademy.ru/" method="post">
+        <h2 class="subsribe-title"></h2>
+        <p class="subsribe-description"></p>
+        <div class="subsribe-line">
+            <!--Див для длаьнейшего выравнивания в строку инпута и сабмита-->
+            <input type="email" class="subscribe-email" name="subscriber-email" id="subscribe-email" placeholder="Ваш-email" required>
+            <button class="button subsribe-button">ПОДПИСАТЬСЯ</button>
+        </div>
+    </form>
     <footer class="main-footer">
         <section class="footer-social">
             <ul class="footer-list">
                 <li class="footer-list-item">
-                    <a href="https://vk.com/htmlacademy" class="button"></a>
+                    <a href="https://vk.com/htmlacademy" class="button">Вконтакте</a>
                 </li>
                 <li class="footer-list-item">
-                    <a href="https://t.me/htmlacademy" class="button"></a>
+                    <a href="https://t.me/htmlacademy" class="button">Телеграмм</a>
                 </li>
                 <li class="footer-list-item">
-                    <a href="https://www.youtube.com/user/htmlacademyru" class="button"></a>
+                    <a href="https://www.youtube.com/user/htmlacademyru" class="button">Youtube</a>
                 </li>
             </ul>
         </section>
