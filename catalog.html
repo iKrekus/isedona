@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Каталог</title>
 </head>
-<header header class="main-header">
+<header class="main-header">
     <a class="navigation-logo" href="index/html">
         <img src="#" alt="Логотип 'СЕДОНА'" class="logo-image">
     </a>
@@ -52,44 +52,43 @@
         </ul>
         <h2 class="visuality-hidden">Фильтр гостиниц</h2>
         <form action="https://echo.htmlacademy.ru/" class="hotel-filter">
-            <fieldset class="hotel-filter-group">
+            <div class="hotel-filter-group">
                 <legend class="hotel-filter-group-title">Инфраструктура:</legend>
                 <label class="control">
-                  <input type="checkbox" name="pool" id="pool" class="control-input" checked>Бассейн</input>
+                  <input type="checkbox" name="pool" id="pool" class="control-input" checked>Бассейн
                 </label>
                 <label class="control">
-                  <input type="checkbox" name="parking" id="parking" class="control-input" checked>Парковка</input>
+                  <input type="checkbox" name="parking" id="parking" class="control-input" checked>Парковка
                 </label>
                 <label class="control">
-                  <input type="checkbox" name="wi-fi" id="wi-fi" class="control-input">Wi-Fi</input>
+                  <input type="checkbox" name="wi-fi" id="wi-fi" class="control-input">Wi-Fi
                 </label>
-            </fieldset>
-            <fieldset class="hotel-filter-group">
+            </div>
+            <div class="hotel-filter-group">
                 <legend class="hotel-filter-group-title">Тип жилья:</legend>
                 <label class="control">
-                  <input type="radio" name="hosting-type" value="hotel" id="hotel" class="control-input" checked>Гостиница</input>
+                  <input type="radio" name="hosting-type" value="hotel" id="hotel" class="control-input" checked>Гостиница
                 </label>
                 <label class="control">
-                  <input type="radio" name="hosting-type" value="motel" id="motel" class="control-input">Мотель</input>
+                  <input type="radio" name="hosting-type" value="motel" id="motel" class="control-input">Мотель
                 </label>
                 <label class="control">
-                  <input type="radio" name="hosting-type" value="apartments" id="apartments" class="control-input">Апартаменты</input>
+                  <input type="radio" name="hosting-type" value="apartments" id="apartments" class="control-input">Апартаменты
                 </label>
-            </fieldset>
-            <fieldset class="hotel-filter-group">
+            </div>
+            <div class="hotel-filter-group">
                 <legend class="hotel-filter-group-title">Стоимость, ₽:</legend>
-
-            </fieldset>
-            <fieldset class="hotel-group">
+            </div>
+            <div class="hotel-group">
                 <button class="button hotel-submit">Применить</button>
                 <input class="button hotel-reset" type="reset" value="Сбросить">
-            </fieldset>
+            </div>
         </form>
     </header>
     <section class="hotel-catalog">
         <header class="hotel-catalog-header">
             <span class="visuality-hidden">Сортировка списка отелей</span>
-            <h1 class="hotel-catalog-title">Найдено гостиниц: 38</h1>
+            <h2 class="hotel-catalog-title">Найдено гостиниц: 38</h2>
             <select class="hotel-catalog-sort" aria-label="Сортировка">
               <option value="cheap">Сначала дешёвое</option>
               <option value="expensive">Сначала дорогое</option>
@@ -195,40 +194,19 @@
 </main>
 
 <footer class="main-footer">
-    <form class="subsribe" action="https://echo.htmlacademy.ru/" method="post">
-        <h2 class="subsribe-title"></h2>
-        <p class="subsribe-description"></p>
-        <div class="subsribe-line">
-            <!--Див для длаьнейшего выравнивания в строку инпута и сабмита-->
-            <input type="email" class="subscribe-email" name="subscriber-email" id="subscribe-email" placeholder="Ваш-email" required>
-            <button class="button subsribe-button">ПОДПИСАТЬСЯ</button>
-        </div>
-    </form>
-    <section class="footer-social">
-        <ul class="footer-list">
-            <li class="footer-list-item">
-                <a href="https://vk.com/htmlacademy" class="button">Вконтакте</a>
-            </li>
-            <li class="footer-list-item">
-                <a href="https://t.me/htmlacademy" class="button">Телеграмм</a>
-            </li>
-            <li class="footer-list-item">
-                <a href="https://www.youtube.com/user/htmlacademyru" class="button">Youtube</a>
-            </li>
-        </ul>
-    </section>
+    <a href="https://vk.com/htmlacademy" class="button">Вконтакте</a>
+    <a href="https://t.me/htmlacademy" class="button">Телеграмм</a>
+    <a href="https://www.youtube.com/user/htmlacademyru" class="button">Youtube</a>
     <section class="footer-contacts">
+        <h2 class="visuality-hidden">Телефон</h2>
         <address class="footer-contacts-address">
     <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
   </address>
     </section>
-    <section class="footer-logo">
-        <a href="https://htmlacademy.ru/">
-            <img class="footer-logo-image" src="#" alt="HTMLacademy">
-        </a>
-    </section>
-</footer>
+    <a href="https://htmlacademy.ru/">
+        <img class="footer-logo-image" src="#" alt="HTMLacademy">
+    </a>
 
-<body>
+</footer>
 
 </html>
