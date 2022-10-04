@@ -40,6 +40,7 @@ body{
   background-color: #7DB54F;
 }
 /*END BUTTONS*/
+/*BLOKS*/
 .footer-social .button{
   background-color: transparent;
 }
@@ -63,6 +64,7 @@ body{
 .features{
   background-color: #82B3D3;
 }
+/*END BLOKS*/
 /*LISTS*/
 .advantages{
   list-style: none;
