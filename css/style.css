@@ -403,20 +403,26 @@ h2 {
 }
 
 .hero {
-    background: #fff url(../images/backgrounds/hero-background.jpg) no-repeat center top;
-    width: 100%;
-    max-height: 767px;
     position: relative;
     /* 485px; */
 }
 
-.hero-footer {
-    height: 282px;
-    padding-top: 485px;
-    position: relative;
+.hero::before {
+    content: "";
+    display: block;
+    background: #fff url(../images/backgrounds/hero-background.jpg) no-repeat center top;
+    min-height: 767px;
+    width: 100%;
+    min-height: 485px;
+    /* position: absolute;
+    top: 51px;
+    left: 0;
+    margin-left: auto;
+    right: 0;
+    margin-right: auto; */
 }
 
-.hero::before {
+.hero::after {
     display: block;
     content: ' ';
     background: url(../images/welcome.png) no-repeat;
@@ -430,7 +436,7 @@ h2 {
     margin-right: auto;
 }
 
-.hero-footer::after {
+.hero-footer::before {
     display: block;
     content: ' ';
     background: url(../images/divider.svg) no-repeat;
@@ -439,15 +445,18 @@ h2 {
     margin-right: auto;
     position: absolute;
     left: 0;
-    top: 428px;
+    top: -57px;
+}
+
+.hero-footer {
+    position: relative;
+    padding: 69px 270px 90px;
+    box-sizing: border-box;
 }
 
 .hero-title {
-    max-width: 620px;
-    /* text-align: center; */
-    display: block;
-    margin: auto;
-    margin-top: 69px;
+    margin: 0;
+    margin-bottom: 20px;
 }
 
 .features {
