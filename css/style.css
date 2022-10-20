@@ -666,11 +666,25 @@ h2 {
 }
 
 .hotel-catalog-list {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
 }
 
 .hotel-catalog-item {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    row-gap: 16px;
+    padding: 20px;
+    border: 1px solid #E6E6E6;
+    border-radius: 4px;
+}
+
+
+/* .hotel-catalog-item {
     width: 340px;
     padding: 20px;
     border: 1px solid #E6E6E6;
@@ -686,7 +700,7 @@ h2 {
 
 .hotel-catalog-item:last-of-type {
     margin-bottom: 0;
-}
+} */
 
 .hotel-cost {
     display: flex;
