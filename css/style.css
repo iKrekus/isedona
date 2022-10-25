@@ -306,6 +306,7 @@ h2 {
     display: flex;
     height: 64px;
     z-index: 1;
+    padding-left: 60px;
 }
 
 .navigation {
@@ -417,12 +418,18 @@ h2 {
     flex-direction: column;
     justify-content: end;
     position: relative;
-    background: #fff url(../images/backgrounds/hero-background.jpg) no-repeat center top;
-    min-height: 767px;
     width: 100%;
 }
 
 .hero::before {
+    content: ' ';
+    background: url(../images/divider.svg) no-repeat center bottom, url(../images/welcome.png) no-repeat center 51px, url(../images/backgrounds/hero-background.jpg) no-repeat center top;
+    width: 100%;
+    min-height: /* 767px */ 485px;
+    margin-bottom: 69px;
+}
+
+/* .hero::before {
     content: ' ';
     background: url(../images/welcome.png) no-repeat;
     width: 458px;
@@ -432,9 +439,9 @@ h2 {
     left: 0;
     right: 0;
     margin: 0 auto;
-}
+} */
 
-.hero::after {
+/* .hero::after {
     content: ' ';
     background: url(../images/divider.svg) no-repeat;
     height: 57px;
@@ -444,7 +451,7 @@ h2 {
     left: 0;
     top: 428px;
     margin-bottom: 69px;
-}
+} */
 
 .hero-title {
     margin: 0;
