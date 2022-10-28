@@ -118,7 +118,7 @@ h2 {
 .advantages-title {
     text-align: center;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 62px;
     position: relative;
 }
 
@@ -132,7 +132,7 @@ h2 {
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    bottom: -20px;
+    bottom: -30px;
     background: rgba(0, 0, 0, 0.3);
 }
 
@@ -629,7 +629,7 @@ line-height: 23px; */
     box-sizing: border-box;
 }
 
-.navigation-link-current {
+.navigation-link-current span {
     padding-bottom: 18px;
     border-bottom: 2px solid #756257;
     box-sizing: border-box;
@@ -816,7 +816,7 @@ line-height: 23px; */
 
 .features-title {
     margin: 0;
-    margin-bottom: 60px;
+    margin-bottom: 62px;
     position: relative;
 }
 
@@ -830,7 +830,7 @@ line-height: 23px; */
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    bottom: -20px;
+    bottom: -30px;
     background: rgba(255, 255, 255, 0.3);
 }
 
@@ -1010,7 +1010,7 @@ line-height: 23px; */
  */
 
 .hotel-catalog-sort:hover,
-.hotel-catalog-sort:focus {
+.hotel-catalog-sort:focus-visible {
     border: 2px solid #68A2CA;
     outline: none;
 }
