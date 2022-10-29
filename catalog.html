@@ -83,7 +83,27 @@
                 </div>
                 <div class="hotel-filter-cost">
                     <p class="hotel-filter-group-title">Стоимость, ₽:</p>
-                    <div class="hotel-group">
+                    <div class="range">
+                        <div class="range-inputs-wrapper">
+                            <label for="min-price" class="range-label">
+                              <input type="number" name="min-price" id="min-price" class="range-input">
+                            </label>
+                            <label for="max-price" class="range-label">
+                              <input type="number" name="max-price" id="max-price" class="range-input">
+                            </label>
+                        </div>
+                        <div class="range-line">
+                            <button type="button" class="min-price-toggle">
+                          <span class="visually-hidden">Изменить минимальную цену.</span>
+                        </button>
+                            <button type="button" class="max-price-toggle">
+                          <span class="visually-hidden">Изменить максимальную цену.</span>
+                        </button>
+                            <div class="range-not-active">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hotel-group-control">
                         <button class="button button-blue">Применить</button>
                         <button class="button button-transparent" type="reset">Сбросить</button>
                     </div>
