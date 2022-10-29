@@ -566,12 +566,17 @@ line-height: 23px; */
 }
 
 .search-icon::before {
-    display: block;
-    content: ' ';
-    background: url(../images/icons/search.svg) no-repeat;
-    height: 20px;
-    width: 20px;
-    margin-right: auto;
+  display: block;
+  position: absolute;
+  content: ' ';
+  background: url(../images/icons/search.svg) no-repeat;
+  height: 20px;
+  width: 20px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
 }
 
 .favorite-icon {
@@ -586,7 +591,11 @@ line-height: 23px; */
     background: url(../images/icons/favorites.svg) no-repeat;
     height: 20px;
     width: 20px;
-    margin-right: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
 }
 
 .favorite-icon::after {
