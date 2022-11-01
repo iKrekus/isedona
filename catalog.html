@@ -15,13 +15,13 @@
         <nav class="navigation">
             <ul class="navigation-list">
                 <li class="navigation-item">
-                    <a href="index.html" class="navigation-link">Главная</a>
+                    <a href="index.html" class="navigation-link navigation-link-current">Главная</a>
                 </li>
                 <li class="navigation-item">
                     <a href="#" class="navigation-link">О седоне</a>
                 </li>
                 <li class="navigation-item">
-                    <a href="catalog.html" class="navigation-link navigation-link-current">Гостиницы</a>
+                    <a href="catalog.html" class="navigation-link">Гостиницы</a>
                 </li>
             </ul>
             <ul class="navigation-user">
@@ -34,6 +34,7 @@
                 <li class="navigation-item">
                     <a href="#" class="navigation-link favorite-icon">
                         <span class="visually-hidden">Избранное</span>
+                        <span class="favorite-counter">12</span>
                         <!--<img src="images/icons/favorites.svg" width="20" height="20" alt="Избранное">-->
                     </a>
                 </li>
@@ -69,7 +70,7 @@
                 </label>
                     </div>
                     <div class="hotel-filter-housing-type">
-                        <p class="hotel-filter-group-title">Тип жилья:</p>
+                        <p class="hotel-filter-group-title">Тип Жилья:</p>
                         <label class="control">
                   <input type="radio" name="hosting-type" value="hotel" id="hotel" class="control-input" checked>Гостиница
                 </label>
@@ -149,7 +150,7 @@
                     <!-- <div class="hotel-ietem-raiting-wrapper"> -->
                     <span class="visually-hidden">Четырех-звёздочный отель</span>
                     <!-- <img src="#" alt="Четыре звезды" class="hotel-stars"> -->
-                    <p class="hotel-raiting four-stars">Рейтинг: 8,5</p>
+                    <p class="hotel-raiting four-stars"><span>Рейтинг: 8,5</span></p>
                     <!-- </div> -->
                 </section>
                 <section class="hotel-catalog-item">
@@ -166,7 +167,7 @@
                     <!-- <div class="hotel-ietem-raiting-wrapper"> -->
                     <span class="visually-hidden">Четырех-звёздочный отель</span>
                     <!-- <img src="#" alt="Четыре звезды" class="hotel-stars"> -->
-                    <p class="hotel-raiting four-stars">Рейтинг: 9,2</p>
+                    <p class="hotel-raiting four-stars"><span>Рейтинг: 9,2</span></p>
                     <!-- </div> -->
                 </section>
                 <section class="hotel-catalog-item">
@@ -183,7 +184,7 @@
                     <!-- <div class="hotel-ietem-raiting-wrapper"> -->
                     <span class="visually-hidden">Трёх-звёздочный отель</span>
                     <!-- <img src="#" alt="Три звезды" class="hotel-stars"> -->
-                    <p class="hotel-raiting three-stars">Рейтинг: 6,9</p>
+                    <p class="hotel-raiting three-stars"><span>Рейтинг: 6,9</span></p>
                     <!-- </div> -->
                 </section>
                 <section class="hotel-catalog-item">
@@ -200,7 +201,7 @@
                     <!-- <div class="hotel-ietem-raiting-wrapper"> -->
                     <span class="visually-hidden">Двух-звёздочный отель</span>
                     <!--<img src="#" alt="Две звезды" class="hotel-stars">-->
-                    <p class="hotel-raiting two-stars">Рейтинг: 5,0</p>
+                    <p class="hotel-raiting two-stars"><span>Рейтинг: 5,0</span></p>
                     <!-- </div> -->
                 </section>
 
@@ -253,7 +254,7 @@
         <div class="modal modal-search">
             <h2 class="modal-search-form-title">Поиск гостиницы в Седоне</h2>
             <form class="modal-search-form" method="post">
-                <button type="button" class="button modal-close-button">
+                <button type="button" class="modal-close-button">
                   <span class="visually-hidden">Закрыть</span>
                 </button>
                 <label for="chill-start" class="modal-search-form-label">Дата заезда:
@@ -274,7 +275,7 @@
                         <button type="button" class="counter-button button-minus">
                           <span class="visually-hidden">Убрать</span>
                         </button>
-                        <input type="number" name="modal-people-adult" id="modal-people-adult" class="range-input peole-number" value="2" min="1" required>
+                        <input type="number" name="modal-people-adult" id="modal-people-adult" class="range-input pepole-number" value="2" min="1" required>
                         <button type="button" class="counter-button button-plus">
                           <span class="visually-hidden">Добавить</span>
                         </button>
@@ -292,7 +293,7 @@
                         <button type="button" class="counter-button button-minus">
                           <span class="visually-hidden">Убрать</span>
                         </button>
-                      <input type="number" name="modal-people-child" id="modal-people-child" class="range-input peole-number" value="2" min="0" required>
+                      <input type="number" name="modal-people-child" id="modal-people-child" class="range-input pepole-number" value="2" min="0" required>
                         <button type="button" class="counter-button button-plus">
                           <span class="visually-hidden">Добавить</span>
                         </button>

@@ -90,6 +90,8 @@ h2 {
 
 .food::before {
     content: "";
+    position: absolute;
+    top: 76px;
     background: url(../images/advantages-food.png) no-repeat center;
     background-size: contain;
     width: 75px;
@@ -99,6 +101,8 @@ h2 {
 
 .housing::before {
     content: "";
+    position: absolute;
+    top: 76px;
     background: url(../images/advantages-housing.png) no-repeat center;
     background-size: contain;
     width: 75px;
@@ -108,6 +112,8 @@ h2 {
 
 .souvenir::before {
     content: "";
+    position: absolute;
+    top: 76px;
     background: url(../images/advantages-souvenir.png) no-repeat center;
     background-size: contain;
     width: 75px;
@@ -136,6 +142,17 @@ h2 {
     background: rgba(0, 0, 0, 0.3);
 }
 
+
+/*for Pixel Perfect*/
+
+.advantages-title:not(.stroke) {
+    /*for Pixel Perfect*/
+    padding-top: 116px;
+    /*for Pixel Perfect*/
+    margin-bottom: 30px;
+    /*for Pixel Perfect*/
+}
+
 .advantages-description {
     text-align: center;
     margin: 0;
@@ -143,6 +160,8 @@ h2 {
 
 .features-description {
     margin: 0;
+    margin-top: 30px;
+    /*for Pixel Perfect*/
 }
 
 .subsribe-title {
@@ -223,6 +242,7 @@ h2 {
     border: none;
     border-radius: 4px;
     text-align: center;
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -263,7 +283,7 @@ h2 {
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
-    /* min-width: 282px; */
+    font-family: inherit;
 }
 
 .button-blue {
@@ -418,14 +438,11 @@ h2 {
 }
 
 .hotel-filter .control {
-    /* position: relative; */
     appearance: none;
-    /* margin: 0;
-margin-right: 16px; */
     display: flex;
-    margin-bottom: 16px;
-    /* font-size: 18px;
-line-height: 23px; */
+    /* margin-bottom: 16px; */
+    margin-bottom: 18px;
+    /*For Pixex Perfect*/
 }
 
 .hotel-filter .control:hover,
@@ -526,7 +543,7 @@ line-height: 23px; */
     display: flex;
     height: 64px;
     z-index: 1;
-    padding-left: 60px;
+    padding-left: 70px;
 }
 
 .navigation {
@@ -822,15 +839,19 @@ line-height: 23px; */
 .features-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center;  for Pixel Perfext*/
     text-align: center;
-    margin: 0;
+    margin: auto;
+    margin-top: 92px;
+    /* row-gap: 62px; for Pixel Perfext*/
+    /* margin: auto; for Pixel Perfext*/
     padding: 0 85px;
 }
 
 .features-title {
     margin: 0;
-    margin-bottom: 62px;
+    margin-bottom: 30px;
+    /*for Pixel Perfect*/
     position: relative;
 }
 
@@ -852,12 +873,12 @@ line-height: 23px; */
     display: flex;
     list-style: none;
     padding: 0;
-    background-color: rgba(131, 179, 211, 0.12);
+    background-color: #ffffff;
     margin: 0;
 }
 
 .advantages--darck {
-    background-color: rgba(131, 179, 211, 0.2);
+    background-color: #F0F5F9
 }
 
 .advantages-item {
@@ -870,6 +891,10 @@ line-height: 23px; */
     text-align: center;
     padding: 0 85px;
     position: relative;
+    box-sizing: border-box;
+    /*for Pixel Perfect*/
+    padding-bottom: 18px;
+    /*for Pixel Perfect*/
 }
 
 .action {
@@ -907,7 +932,7 @@ line-height: 23px; */
     font-size: 22px;
     line-height: 26px;
     margin: 0;
-    margin-bottom: 51px;
+    margin-bottom: 54px;
 }
 
 .subscribe-email {
@@ -918,6 +943,7 @@ line-height: 23px; */
     border: none;
     border-radius: 4px 0 0 4px;
     background-color: #F2F2F2;
+    font-family: inherit;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
@@ -931,7 +957,9 @@ line-height: 23px; */
     background: #6F7279 url(../images/backgrounds/filter-background.jpg) no-repeat center center;
     background-size: cover;
     padding: 0 70px;
-    padding-top: 30px;
+    /*padding-top: 30px; */
+    padding-top: 36px;
+    /*for Pixel Perfect*/
     min-height: 377px;
 }
 
@@ -997,6 +1025,10 @@ line-height: 23px; */
     margin-bottom: 40px;
 }
 
+.hotel-filter-cost .hotel-filter-group-title {
+    margin-bottom: 20px;
+}
+
 .hotel-catalog-sort {
     /* position: relative; */
     /* appearance: none; */
@@ -1011,7 +1043,7 @@ line-height: 23px; */
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    /*  background: url(../images/icons/arrow-down.svg) no-repeat 95% center; */
+    font-family: inherit;
 }
 
 .hotel-filter-group-title {
@@ -1167,17 +1199,6 @@ line-height: 23px; */
     border: 2px solid rgba(0, 0, 0, 0.3);
 }
 
-
-/* .hotel-catalog-sort::before{
-  content: '';
-  background: url(../images/icons/arrow-down.svg);
-  width: 12px;
-  height: 8px;
-  position: absolute;
-  right: 0;
-
-} */
-
 .hotel-sort-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -1205,7 +1226,9 @@ line-height: 23px; */
     border-radius: 4px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px 16px;
+    /* gap: 20px 16px; */
+    gap: 16px;
+    /*For Pixex Perfect*/
     padding: 20px;
 }
 
@@ -1277,6 +1300,20 @@ line-height: 23px; */
     margin: 0;
     position: relative;
     text-align: end;
+    margin-top: 10px;
+    /*For Pixex Perfect*/
+}
+
+.hotel-raiting span {
+    background-color: #F2F2F2;
+    padding: 8px 24px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: inherit;
+    box-sizing: border-box;
 }
 
 .hotel-raiting::before {
@@ -1291,6 +1328,20 @@ line-height: 23px; */
     left: 0;
     top: 0;
 }
+
+
+/* .hotel-raiting::after {
+  display: block;
+  content: ' ';
+  background: url(../images/icons/star.svg) repeat-x;
+  background-repeat: space;
+  min-height: 20px;
+  width: 20px;
+  margin-right: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+} */
 
 .two-stars::before {
     width: 41px;
@@ -1310,9 +1361,12 @@ line-height: 23px; */
 
 .pagination {
     display: flex;
-    padding-top: 40px;
+    /* padding-top: 40px; */
+    padding-top: 45px;
+    /*For Pixex Perfect*/
     margin-top: 40px;
     border-top: 1px solid #E6E6E6;
+    margin-bottom: 60px;
 }
 
 .pagination-link {
@@ -1386,11 +1440,10 @@ line-height: 23px; */
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 2;
+    /* display: none; */
 }
 
 .modal {
-    /* display: grid;
-    align-items: flex-start; */
     width: 717px;
     min-height: 576px;
     padding: 64px 70px;
@@ -1405,12 +1458,20 @@ line-height: 23px; */
     font-size: 20px;
     line-height: 24px;
     box-sizing: border-box;
+    /* display: none; */
 }
 
 .modal-search-form {
     margin-top: 64px;
     display: grid;
     row-gap: 48px;
+}
+
+.modal-search-form-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0;
 }
 
 .modal-search-form-label {
@@ -1429,10 +1490,22 @@ line-height: 23px; */
     border: none;
     box-sizing: border-box;
     width: 100%;
+    position: relative;
+}
+
+.modal-input::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url(../images/icons/calendar.svg) no-repeat;
 }
 
 .modal-input-wrapper {
-    position: relative;
+    /*  position: relative; */
     flex-grow: 1;
     max-width: 440px;
 }
@@ -1460,6 +1533,20 @@ line-height: 23px; */
     cursor: pointer;
 }
 
+.modal-close-button:hover {
+    background-color: #E6E6E6;
+}
+
+.modal-close-button:active {
+    opacity: 0.3;
+}
+
+.modal-close-button:focus-visible {
+    background-color: #E6E6E6;
+    box-shadow: 0 0 0 2px #83B3D3;
+    outline: none;
+}
+
 .maodal-people-wrapper {
     display: flex;
     justify-content: space-between;
@@ -1472,12 +1559,15 @@ line-height: 23px; */
     margin-left: auto;
 }
 
-.peole-number {
+.pepole-number {
     padding: 14px 10px;
     width: 31px;
     box-sizing: border-box;
     border: none;
     background: none;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
     /* background-color: #F2F2F2; */
 }
 
@@ -1524,6 +1614,7 @@ line-height: 23px; */
 
 .modal-people-label+.modal-people-label span {
     position: relative;
+    display: block;
 }
 
 .tooltip {
@@ -1532,6 +1623,7 @@ line-height: 23px; */
 }
 
 .tooltip-toggle {
+    cursor: help;
     width: 26px;
     height: 26px;
     color: #ffffff;
