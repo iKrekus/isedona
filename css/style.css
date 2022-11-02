@@ -1484,30 +1484,20 @@ h2 {
     font-weight: inherit;
     font-size: 18px;
     line-height: inherit;
+    font-family: inherit;
     background-color: #F2F2F2;
     border-radius: 4px;
     padding: 12px 20px;
     border: none;
     box-sizing: border-box;
     width: 100%;
-    position: relative;
-}
-
-.modal-input::after {
-    content: '';
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: url(../images/icons/calendar.svg) no-repeat;
 }
 
 .modal-input-wrapper {
     /*  position: relative; */
     flex-grow: 1;
     max-width: 440px;
+    position: relative;
 }
 
 .modal-input-bottom-text {
@@ -1518,6 +1508,7 @@ h2 {
     font-size: 16px;
     line-height: 21px;
     margin-left: 20px;
+    margin-top: 4px;
 }
 
 .modal-close-button {
@@ -1552,6 +1543,20 @@ h2 {
     justify-content: space-between;
 }
 
+.modal-date-select {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    background: url(../images/icons/calendar.svg) center no-repeat;
+    border: none;
+    padding: 0;
+    margin: auto;
+}
+
 .counter {
     display: flex;
     background-color: #F2F2F2;
@@ -1560,8 +1565,8 @@ h2 {
 }
 
 .pepole-number {
-    padding: 14px 10px;
-    width: 31px;
+    padding: 17px 10px 10px;
+    width: 29px;
     box-sizing: border-box;
     border: none;
     background: none;
@@ -1670,7 +1675,13 @@ h2 {
 }
 
 .modal-search-form-submit {
-    padding: 18px 0;
+    padding: 20px 0;
+    background-color: #82B3D3;
+    border-radius: 10px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
 }
 
 
