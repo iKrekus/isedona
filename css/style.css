@@ -454,6 +454,7 @@ h2 {
 .hotel-filter input[type="radio"]:focus-visible {
     outline: none;
     box-shadow: 0 0 0 3px #83B3D3;
+    height: 20px;
 }
 
 .hotel-filter input[type="checkbox"],
@@ -582,20 +583,24 @@ h2 {
 .search-icon {
     display: block;
     width: 40px;
+    position: relative;
     box-sizing: border-box;
 }
 
 .search-icon::before {
-    display: block;
     position: absolute;
     content: ' ';
     background: url(../images/icons/search.svg) no-repeat;
     height: 20px;
     width: 20px;
-    top: 0;
+    /* top: 0; */
+    top: 4px;
+    /*For Pixex Perfect*/
     bottom: 0;
     right: 0;
-    left: 0;
+    /* left: 0; */
+    left: 4px;
+    /*For Pixex Perfect*/
     margin: auto;
 }
 
@@ -603,6 +608,7 @@ h2 {
     display: block;
     width: 40px;
     box-sizing: border-box;
+    position: relative;
 }
 
 .favorite-icon::before {
@@ -611,10 +617,15 @@ h2 {
     background: url(../images/icons/favorites.svg) no-repeat;
     height: 20px;
     width: 20px;
-    top: 0;
+    position: absolute;
+    /* top: 0; */
+    top: 4px;
+    /*For Pixex Perfect*/
     bottom: 0;
     right: 0;
-    left: 0;
+    /* left: 0; */
+    left: 4px;
+    /*For Pixex Perfect*/
     margin: auto;
 }
 
@@ -624,8 +635,12 @@ h2 {
     width: 20px;
     height: 20px;
     position: absolute;
-    right: -4px;
-    top: 8px;
+    /* right: -4px;
+    top: 8px; */
+    top: 0;
+    /*For Pixex Perfect*/
+    right: 0;
+    /*For Pixex Perfect*/
     background-color: #7DB54F;
     border-radius: 50%;
     font-weight: 400;
@@ -909,16 +924,22 @@ h2 {
     min-height: 415px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin: auto;
     align-items: center;
-    text-align: center;
     color: #000;
+    box-sizing: border-box;
+    /*for Pixel Perfect*/
+    padding-top: 96px;
+    /*for Pixel Perfect*/
 }
 
 .subsribe-main {
     background: #37546C url(../images/backgrounds/subscribe-background.jpg) no-repeat center center;
     background-size: cover;
     color: #fff;
+    padding-bottom: 10px;
+    margin: 0;
+    /*for Pixel Perfect*/
 }
 
 .subsribe-line {
@@ -932,7 +953,7 @@ h2 {
     font-size: 22px;
     line-height: 26px;
     margin: 0;
-    margin-bottom: 54px;
+    margin-bottom: 55px;
 }
 
 .subscribe-email {
@@ -1034,9 +1055,9 @@ h2 {
     /* appearance: none; */
     width: 292px;
     margin-right: 70px;
-    padding-left: 20px;
-    /* padding-top: 14px;
-    padding-bottom: 14px; */
+    padding-left: 14px;
+    /* padding-top: 14px; */
+    padding-bottom: 4px;
     border: 2px solid #E5E5E5;
     border-radius: 4px;
     background: #fff;
@@ -1431,6 +1452,9 @@ h2 {
     height: 12px;
 }
 
+
+/*Modal*/
+
 .modal-conainer {
     position: fixed;
     top: 0;
@@ -1458,7 +1482,6 @@ h2 {
     font-size: 20px;
     line-height: 24px;
     box-sizing: border-box;
-    /* display: none; */
 }
 
 .modal-search-form {
@@ -1490,15 +1513,21 @@ h2 {
     padding: 12px 20px;
     border: none;
     box-sizing: border-box;
-    width: 100%;
+    /* width: 100%; */
+    width: 440px;
 }
 
 .modal-input-wrapper {
-    /*  position: relative; */
+    position: relative;
+}
+
+
+/* .modal-input-wrapper {
+
     flex-grow: 1;
     max-width: 440px;
     position: relative;
-}
+} */
 
 .modal-input-bottom-text {
     position: absolute;
@@ -1509,6 +1538,9 @@ h2 {
     line-height: 21px;
     margin-left: 20px;
     margin-top: 4px;
+    bottom: -25px;
+    right: 0;
+    width: 420px;
 }
 
 .modal-close-button {
@@ -1676,13 +1708,15 @@ h2 {
 
 .modal-search-form-submit {
     padding: 20px 0;
-    background-color: #82B3D3;
     border-radius: 10px;
     font-family: inherit;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
 }
+
+
+/*End Modal*/
 
 
 /*END BLOKS*/

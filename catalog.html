@@ -257,24 +257,24 @@
                 <button type="button" class="modal-close-button">
                   <span class="visually-hidden">Закрыть</span>
                 </button>
-                <label for="chill-start" class="modal-search-form-label">Дата Заезда:
-                  <span class="modal-input-wrapper">
+                <div class="modal-input-wrapper">
+                    <button type="button" class="modal-date-select">
+                    <span class="visually-hidden">Выбрать дату</span>
+                  </button>
+                    <label for="chill-start" class="modal-search-form-label">Дата Заезда:
                     <input type="text" name="chill-start" id="chill-start" value="27 апреля 2020" class="modal-input" required>
-                    <button type="button" class="modal-date-select">
-                      <span class="visually-hidden">Выбрать дату</span>
-                    </button>
                     <span class="modal-input-bottom-text warning">Мы не можем отправить вас в прошлое.</span>
-                  </span>
-            </label>
-                <label for="chill-end" class="modal-search-form-label">Дата Выезда:
-                  <span class="modal-input-wrapper">
-                    <input type="text" name="chill-end" id="chill-end"  value="1 сентября 2023" class="modal-input" required>
+                  </label>
+                </div>
+                <div class="modal-input-wrapper">
                     <button type="button" class="modal-date-select">
-                      <span class="visually-hidden">Выбрать дату</span>
-                    </button>
-                    <span class="modal-input-bottom-text">На эти даты есть свободные номера. Пока есть.</span>
-                  </span>
-            </label>
+                  <span class="visually-hidden">Выбрать дату</span>
+                </button>
+                    <label for="chill-start" class="modal-search-form-label">Дата Заезда:
+                    <input type="text" name="chill-end" id="chill-end"  value="1 сентября 2023" class="modal-input" required>
+                  <span class="modal-input-bottom-text">На эти даты есть свободные номера. Пока есть</span>
+                </label>
+                </div>
                 <div class="maodal-people-wrapper">
                     <label for="modal-people-adult" class="modal-people-label">Взрослые:
                       <div class="range-input counter">
@@ -306,7 +306,7 @@
                       </div>
                     </label>
                 </div>
-                <button type="submit" class="button modal-search-form-submit">Найти</button>
+                <button type="submit" class="button button-blue modal-search-form-submit">Найти</button>
             </form>
         </div>
     </div>
