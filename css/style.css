@@ -739,7 +739,7 @@ h2 {
 
 .hero::before {
     content: ' ';
-    background: url(../images/divider.svg) no-repeat center bottom, url(../images/welcome.png) no-repeat center 51px, url(../images/backgrounds/hero-background.jpg) no-repeat center top;
+    background: url(../images/divider.svg) no-repeat center bottom, url(../images/welcome.png) no-repeat center 51px, #1e313b url(../images/backgrounds/hero-background.jpg) no-repeat center top;
     width: 100%;
     min-height: /* 767px */
     485px;
@@ -823,7 +823,7 @@ h2 {
 
 .advantages-item {
     width: 400px;
-    height: 384px;
+    min-height: 384px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
