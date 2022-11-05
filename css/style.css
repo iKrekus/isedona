@@ -1413,13 +1413,17 @@ h2 {
     align-items: center;
 }
 
-.bradcrumbs-link::before {
+.bradcrumbs-link::after {
     content: '';
     display: block;
     margin-right: 10px;
     background: url(../images/icons/arrow-right.svg) no-repeat center;
     width: 8px;
     height: 12px;
+}
+
+.bradcrumbs-link:last-child::after {
+    display: none;
 }
 
 .bradcrumbs-link.bradcrumbs-home::before {
