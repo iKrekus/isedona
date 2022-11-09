@@ -1023,11 +1023,6 @@ margin-bottom: 32px;
   height: 48px;
 }
 
-/* .hotel-filter-group-title {
-  -ms-grid-column-span: 2;
-  grid-column: span 2;
-} */
-
 .range-inputs-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
