@@ -4,15 +4,15 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="icon" href="favicon.ico">
-    <!-- 32×32 -->
+    <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="main-header">
         <a class="navigation-logo" href="index.html">
-            <img src="images/logos/logo.png" width="140" height="70" alt="Логотип 'СЕДОНА'" class="logo-image">
+            <img src="images/logos/logo.png" width="140" height="70" alt="Логотип 'СЕДОНА.'" class="logo-image">
         </a>
         <nav class="navigation">
             <ul class="navigation-list">
@@ -39,13 +39,14 @@
                     </a>
                 </li>
                 <li class="navigation-item">
-                    <button class="button button-buy" type="button">Хочу сюда!</button>
+                    <a class="button button-buy" href="#">Хочу сюда!</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main class="main-continer">
         <section class="hero">
+          <h1 class="visually-hidden">Главная - СЕДОНА</h1>
             <h2 class="hero-title">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
             <p class="hero-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </section>
@@ -55,7 +56,7 @@
                 <h2 class="features-title light-text">Настоящий городок</h2>
                 <p class="features-description light-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-            <img class="features-photo" src="images/photos/photo-town.jpg" width="800" height="384" alt="Фото города">
+            <img class="features-photo" src="images/photos/photo-town.jpg" width="800" height="384" alt="Фото города.">
         </div>
         <ul class="advantages">
             <li class="advantages-item">
@@ -72,7 +73,7 @@
             </li>
         </ul>
         <div class="features">
-            <img class="features-photo" src="images/photos/photo-devil-bridge.jpg" width="800" height="384" alt="Фото Мост дьявола">
+            <img class="features-photo" src="images/photos/photo-devil-bridge.jpg" width="800" height="384" alt="Фото Мост дьявола.">
             <div class="features-container">
                 <h2 class="features-title light-text">Там есть<br>мост дьявола</h2>
                 <p class="features-description light-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -103,7 +104,7 @@
         <p class="subsribe-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         <div class="subsribe-line">
             <input class="subscribe-email" type="email" name="subscriber-email" id="subscribe-email" placeholder="Ваш e-mail" required>
-            <button class="button subsribe-button button-blue">Подписаться</button>
+            <button class="button subsribe-button button-blue" type="button">Подписаться</button>
         </div>
     </form>
     <footer class="main-footer">
@@ -145,6 +146,71 @@
             </svg>
         </a>
     </footer>
+    <div class="modal-conainer">
+        <div class="modal modal-search">
+          <h2 class="modal-search-form-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <button class="modal-close-button" type="button">
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+            <div class="modal-input-wrapper">
+              <button class="modal-date-select" type="button">
+                <span class="visually-hidden">Выбрать дату</span>
+              </button>
+              <label class="modal-search-form-label" for="chill-start">Дата Заезда:
+                <input class="modal-input" type="text" name="chill-start" id="chill-start" value="27 апреля 2020" required>
+                <span class="modal-input-bottom-text warning">Мы не можем отправить вас в прошлое.</span>
+              </label>
+            </div>
+            <div class="modal-input-wrapper">
+              <button class="modal-date-select" type="button">
+                <span class="visually-hidden">Выбрать дату</span>
+              </button>
+              <label class="modal-search-form-label" for="chill-end">Дата Выезда:
+                <input class="modal-input" type="text" name="chill-end" id="chill-end"  value="1 сентября 2023" required>
+                <span class="modal-input-bottom-text">На эти даты есть свободные номера. Пока есть</span>
+              </label>
+            </div>
+            <div class="maodal-people-wrapper">
+              <div class="modal-people-input">
+                <label class="modal-people-label" for="people-adult">Взрослые:</label>
+                <div class="range-input counter">
+                  <button class="counter-button button-minus" type="button" >
+                    <span class="visually-hidden">Убрать</span>
+                  </button>
+                  <input class="range-input pepole-number" type="number" name="people-adult" id="people-adult" value="2" min="1" max="9" required>
+                  <button class="counter-button button-plus" type="button">
+                    <span class="visually-hidden">Добавить</span>
+                  </button>
+                </div>
+              </div>
+              <div class="modal-people-input">
+                <div class="label-toltip">
+                  <label class="modal-people-label" for="people-child">Дети:</label>
+                  <div class="tooltip">
+                    <button class="tooltip-toggle" type="button" id="tooltip-label-date">
+                      <svg class="tooltip-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4h2v2H9V4Zm2 12H9V7h2v9Z"/>
+                      </svg>
+                    </button>
+                    <div class="tooltip-box">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</div>
+                  </div>
+                </div>
+                <span class="range-input counter">
+                  <button class="counter-button button-minus" type="button">
+                    <span class="visually-hidden">Убрать</span>
+                  </button>
+                  <input class="range-input pepole-number" type="number" name="people-child" id="people-child" value="2" min="1" max="9" required>
+                  <button class="counter-button button-plus" type="button">
+                    <span class="visually-hidden">Добавить</span>
+                  </button>
+                </span>
+              </div>
+            </div>
+            <button class="button button-blue modal-search-form-submit" type="submit">Найти</button>
+          </form>
+        </div>
+    </div>
 </body>
 
 </html>
