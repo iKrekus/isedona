@@ -95,7 +95,7 @@ body {
   background: url("../images/advantages-food.svg") no-repeat center;
   background-size: contain;
   width: 75px;
-  height: 72px;
+  min-height: 72px;
   margin-bottom: 30px;
 }
 
@@ -197,7 +197,7 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   margin: 0;
-  max-width: 530px;
+  max-width: 483px;
 }
 
 .light-text {
@@ -256,6 +256,7 @@ display: block;
 
 .button-buy {
 display: block;
+margin: auto;
 margin-left: 20px;
 padding: 8px 34px;
 box-sizing: border-box;
@@ -870,6 +871,9 @@ display: block;
   color: #000000;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  padding-left: 258px;
+  padding-right: 258px;
+  padding-bottom: 10px;
   padding-top: 96px;
 }
 
@@ -877,9 +881,7 @@ display: block;
   background: #37546C url("../images/backgrounds/subscribe-background.jpg") no-repeat center center;
   background-size: cover;
   color: #ffffff;
-  padding-left: 258px;
-  padding-right: 258px;
-  padding-bottom: 10px;
+
   margin: 0;
 }
 
@@ -1007,6 +1009,10 @@ display: block;
   align-items: center;
   margin-top: 45px;
   margin-bottom: 37px;
+}
+
+.hotel-filter-group-wrapper{
+  width: 549px;
 }
 
 .hotel-filter-group-title {
@@ -1433,6 +1439,7 @@ margin-bottom: 32px;
 .modal {
   width: 717px;
   min-height: 576px;
+  max-height: 100%;
   padding: 64px 70px;
   position: fixed;
   top: 50%;
@@ -1449,6 +1456,7 @@ margin-bottom: 32px;
   line-height: 24px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  overflow: hidden auto;
 }
 
 .modal-search-form {
@@ -1466,18 +1474,6 @@ margin-bottom: 32px;
   text-transform: uppercase;
 }
 
-.modal-search-form-label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .modal-input {
   font-weight: inherit;
   font-size: 18px;
@@ -1490,6 +1486,8 @@ margin-bottom: 32px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 440px;
+  margin-left: auto;
+  min-width: 420px;
 }
 
 .modal-input:focus-visible{
@@ -1508,10 +1506,21 @@ outline: none;
 color: #939393;
 }
 
-.modal-input-wrapper {
+.modal-field-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.modal-input-field-wrapper{
   position: relative;
 }
-
 .modal-input-bottom-text {
   position: absolute;
   display: -webkit-box;
@@ -1522,11 +1531,8 @@ color: #939393;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-  margin-left: 20px;
   margin-top: 4px;
-  bottom: -25px;
-  right: 0;
-  width: 420px;
+  left: 20px;
 }
 
 .modal-close-button {
@@ -1605,7 +1611,6 @@ color: #939393;
   background-color: #F2F2F2;
   border-radius: 4px;
   margin-left: auto;
-  height: 100%;
 }
 
 .pepole-number {
@@ -1681,13 +1686,15 @@ background-color: #D6D0CD;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 48px;
+  min-height: 48px;
+  max-width: 92px;
 }
 
 .label-toltip{
 display: flex;
 align-items: center;
 margin-left: 8px;
+padding-right: 8px;;
 }
 
 .tooltip {
