@@ -12,7 +12,7 @@
 <body>
     <header class="main-header">
         <a class="link navigation-logo" href="index.html">
-            <img src="images/logos/logo.png" width="140" height="70" alt="Логотип 'СЕДОНА.'" class="logo-image">
+            <img class="logo-image" src="images/logos/logo.png" width="140" height="70" alt="Логотип СЕДОНА.">
         </a>
         <nav class="navigation">
             <ul class="navigation-list">
@@ -46,7 +46,7 @@
     </header>
     <main class="main-continer">
         <section class="hero">
-          <h1 class="visually-hidden">Главная - СЕДОНА</h1>
+          <h1 class="visually-hidden">Главная - СЕДОНА.</h1>
             <h2 class="hero-title">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
             <p class="hero-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </section>
@@ -131,6 +131,7 @@
                 </svg>
             </a>
         </div>
+        <span class="visually-hidden">Телефон.</span>
         <a class="link footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <a class="link htmlacademy" href="https://htmlacademy.ru/">
             <span class="visually-hidden">HTML Academy</span>
@@ -154,23 +155,23 @@
               <span class="visually-hidden">Закрыть</span>
             </button>
             <div class="modal-field-wrapper">
-              <button class="modal-date-select" type="button">
-                <span class="visually-hidden">Выбрать дату</span>
-              </button>
               <label class="modal-search-form-label" for="chill-start">Дата Заезда:</label>
               <div class="modal-input-field-wrapper">
                 <input class="modal-input" type="text" name="chill-start" id="chill-start" value="27 апреля 2020" required>
+                <button class="modal-date-select" type="button">
+                  <span class="visually-hidden">Выбрать дату</span>
+                </button>
                 <span class="modal-input-bottom-text warning">Мы не можем отправить вас в прошлое.</span>
               </div>
             </div>
             <div class="modal-field-wrapper">
-              <button class="modal-date-select" type="button">
-                <span class="visually-hidden">Выбрать дату</span>
-              </button>
               <label class="modal-search-form-label" for="chill-end">Дата Выезда:</label>
               <div class="modal-input-field-wrapper">
                 <input class="modal-input" type="text" name="chill-end" id="chill-end"  value="1 сентября 2023" required>
-                <span class="modal-input-bottom-text">На эти даты есть свободные номера. Пока есть</span>
+                <button class="modal-date-select" type="button">
+                  <span class="visually-hidden">Выбрать дату</span>
+                </button>
+                <span class="modal-input-bottom-text">На эти даты есть свободные номера. Пока есть.</span>
               </div>
             </div>
             <div class="maodal-people-wrapper">

@@ -374,6 +374,7 @@ min-width: 232px;
 .button-sort:focus {
   background-color: transparent;
   border: 2px solid #68A2CA;
+  outline: none;
 }
 
 .button-sort--active:hover,
@@ -444,8 +445,8 @@ min-width: 232px;
   opacity: 0.6;
 }
 
-.hotel-filter input[type="checkbox"]:focus,
-.hotel-filter input[type="radio"]:focus {
+.hotel-filter input[type="checkbox"]:focus-visible,
+.hotel-filter input[type="radio"]:focus-visible{
   outline: none;
   -webkit-box-shadow: 0 0 0 3px #83B3D3;
   box-shadow: 0 0 0 3px #83B3D3;
@@ -730,7 +731,7 @@ display: block;
 
 .hero::before {
   content: " ";
-  background: url("../images/divider.svg") no-repeat center bottom, url("../images/welcome.svg") no-repeat center 51px, #1e313b url("../images/backgrounds/hero-background.jpg") no-repeat center top;
+  background: url("../images/divider.svg") no-repeat center bottom, url("../images/welcome.svg") no-repeat center 51px, #d5e3ee url("../images/backgrounds/hero-background.jpg") no-repeat center top;
   width: 100%;
   min-height: 485px;
   margin-bottom: 69px;
@@ -1490,6 +1491,7 @@ margin-bottom: 32px;
   min-width: 420px;
 }
 
+
 .modal-input:focus-visible{
 color: #939393;
 box-shadow: 0 0 0 2px #83B3D3;
@@ -1518,9 +1520,11 @@ color: #939393;
   -ms-flex-align: center;
   align-items: center;
 }
+
 .modal-input-field-wrapper{
   position: relative;
 }
+
 .modal-input-bottom-text {
   position: absolute;
   display: -webkit-box;
@@ -1600,6 +1604,15 @@ color: #939393;
   border: none;
   padding: 0;
   margin: auto;
+  opacity: 0.3;
+}
+
+.modal-input:focus + .modal-date-select {
+  opacity: 1;
+}
+
+.modal-date-select:focus{
+  opacity: 1;
 }
 
 .counter {
